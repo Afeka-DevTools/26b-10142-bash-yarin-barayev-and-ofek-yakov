@@ -44,16 +44,21 @@ All scripts have been granted execution permissions (chmod +x). Run them as foll
 ```
 
 #### uptime_check.sh:
+#### Note: This script works only on Linux environments
+#### (The 'uptime' command in the script is not supported on Windows)
 
 ```Bash
 ./uptime_check.sh
 ```
 
 #### count_words.sh:
+#### Output Format: The command displays the results in this following order:
+#### [Lines] [Words] [Characters] [File Name]
 
 ```Bash
 ./count_words.sh
 ```
+
 
 #### count_extension.sh:
 #### Requires an extension as an argument (e.g., sh or txt).
@@ -67,7 +72,13 @@ All scripts have been granted execution permissions (chmod +x). Run them as foll
 
 #### compare_files.sh:
 #### Requires two file names as arguments
+#### Outputs:
 
+#### < : indicates a line that exists only in the first file
+#### > : indicates a line that exists only in the second file
+#### --- : Acts as a separator between the differences of the two files
+
+#### Example:
 ```Bash
 ./compare_files.sh count_words.sh uptime_check.sh
 ```
