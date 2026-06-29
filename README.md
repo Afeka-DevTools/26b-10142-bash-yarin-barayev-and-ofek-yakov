@@ -3,6 +3,7 @@
 ## Team Members
 * Yarin Barayev
 * Ofek Yakov
+* Amnon Nisimov
 
 ## Project Overview
 This project contains a collection of Bash scripts developed for HW1.
@@ -23,6 +24,15 @@ Each script is designed to perform specific automation or system tasks.
 3. `sort_file.sh` - Sorts the contents of a provided text file alphabetically.
 4. `disk_usage.sh` - Displays the disk usage (in human-readable format) of a given directory.
 5. `kill_processes.sh` - Terminates all active processes matching a given name.
+
+
+**Scripts developed by Amnon Nisimov:**
+1. `add_perfix.sh` - add perfix to all .txt files in specific folder.
+2. `battery_status.sh` - Displays battery status.
+3. `show_files_bigger_then.sh` - showing files bigger then specific size.
+4. `generate_password.sh` - generate a 10 characters password.
+5. `internet_connection_status.sh` - Display Internet connection status.
+
 
 ## How to Run
 
@@ -121,3 +131,36 @@ All scripts have been granted execution permissions (chmod +x). Run them as foll
 ```bash
 ./kill_processes.sh <process_name>
 ```
+
+#### battery_status.sh:
+#### Note: This script works only on Linux environments.
+#### Requires no arguments.
+```bash
+./battery_status.sh
+```
+
+#### add_prefix.sh:
+#### Requires folder path and a prefix.
+```bash
+./add_prefix.sh <folder_path> <prefix>
+```
+
+#### generate_password.sh:
+#### Requires no arguments.
+```bash
+./generate_password.sh
+```
+
+#### internet_connection_status.sh:
+#### Note: This script works only on Linux environments.
+#### Requires no arguments.
+```bash
+./internet_connection_status.sh
+```
+#### show_files_bigger_then.sh:
+#### Requires folder path and a size.
+```bash
+./show_files_bigger_then.sh <folder_path> <size>
+```
+
+
